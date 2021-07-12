@@ -1,0 +1,17 @@
+language: python
+python:
+  - "3.8"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+# command to run tests
+script: pytest --cov=minitrade
+
+notifications:
+  email:
+    recipients:
+      - jphdsn@gmail.com
+      - metila@orange.fr
+      - tokotooujda@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
